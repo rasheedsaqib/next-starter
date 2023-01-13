@@ -1,6 +1,6 @@
 module.exports = {
-  'root': true,
-  'extends': [
+  root: true,
+  extends: [
     'standard-with-typescript',
     'plugin:sonarjs/recommended',
     'plugin:jest/style',
@@ -8,16 +8,12 @@ module.exports = {
     'plugin:prettier/recommended',
     'next/core-web-vitals'
   ],
-  'parser': '@typescript-eslint/parser',
-  'parserOptions': {
-    'project': './tsconfig.json'
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json'
   },
-  'plugins': [
-    '@typescript-eslint',
-    'sonarjs',
-    'simple-import-sort'
-  ],
-  'rules': {
+  plugins: ['@typescript-eslint', 'sonarjs', 'simple-import-sort'],
+  rules: {
     '@typescript-eslint/ban-types': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
@@ -33,26 +29,26 @@ module.exports = {
     'unicorn/filename-case': [
       'error',
       {
-        'case': 'kebabCase',
-        'ignore': [/\$[A-Za-z]+\.tsx/],
-      },
+        case: 'kebabCase',
+        ignore: [/\$[A-Za-z]+\.tsx/]
+      }
     ],
     'unicorn/no-array-callback-reference': 'off',
     'unicorn/no-array-for-each': 'off',
     'unicorn/no-array-reduce': 'off',
     'unicorn/prefer-node-protocol': 'off',
     'unicorn/no-null': 'off',
-    "semi": "off",
-    "@typescript-eslint/semi": ["error"]
+    semi: 'off',
+    '@typescript-eslint/semi': ['error']
   },
-  'overrides': [
+  overrides: [
     {
-      'files': ['*.ts', '*.tsx'],
-      'rules': {
+      files: ['*.ts', '*.tsx'],
+      rules: {
         'prettier/prettier': [
           'error',
           {
-            'semi': false
+            semi: false
           }
         ]
       }

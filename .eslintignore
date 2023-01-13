@@ -3,3 +3,5 @@ public
 .eslintrc.js
 next.config.js
 prettier.config.js
+commitlint.config.js
+next-env.d.ts

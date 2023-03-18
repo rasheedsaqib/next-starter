@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 
-import { BreadcrumbComponent } from '@/features/breadcrumbs/breadcrumb-component'
+import { BreadcrumbComponent } from './breadcrumb-component'
 
 describe('BreadcrumbComponent', () => {
   it('should render the breadcrumb component with correct links', () => {

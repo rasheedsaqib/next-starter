@@ -39,7 +39,8 @@ module.exports = {
     'unicorn/no-array-reduce': 'off',
     'unicorn/prefer-node-protocol': 'off',
     'unicorn/no-null': 'off',
-    '@typescript-eslint/semi': ['off']
+    '@typescript-eslint/semi': ['off'],
+    '@typescript-eslint/consistent-type-definitions': ['off']
   },
   overrides: [
     {

@@ -1,0 +1,11 @@
+import { FunctionComponent } from 'react'
+
+import { {{pascalCase name}}Feature } from '@/features/{{kebabCase name}}/{{kebabCase name}}-feature'
+
+type {{pascalCase name}}PageProperties = {}
+
+const {{pascalCase name}}Page: FunctionComponent<{{pascalCase name}}PageProperties> = properties => {
+  return <{{pascalCase name}}Feature {...properties} />
+}
+
+export default {{pascalCase name}}Page

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 4000",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "analyze:lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
@@ -30,8 +30,10 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.6.0",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@playwright/test": "^1.31.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",

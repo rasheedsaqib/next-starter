@@ -1,0 +1,25 @@
+import { render, screen } from '@testing-library/react'
+import { describe, expect, it } from 'vitest'
+
+import type { Factory } from '@/utils/types'
+
+import type { {{pascalCase name}}ComponentProperties } from './{{kebabCase name}}-component';
+import { {{pascalCase name}}Component } from './{{kebabCase name}}-component';
+
+const createProperties: Factory<{{pascalCase name}}ComponentProperties> = ({
+  ...properties
+} = {}) => ({
+  ...properties
+})
+
+describe('{{pascalCase name}} Component', () => {
+  it('should render the component correctly', () => {
+    const properties = createProperties()
+
+    render(<{{pascalCase name}}Component {...properties} />)
+
+    expect(
+      screen.getByRole('heading', { name: /{{name}}/i, level: 1 })
+    ).toBeInTheDocument()
+  })
+})

@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/prefer-module */
 module.exports = {
   root: true,
   extends: [
@@ -38,8 +39,7 @@ module.exports = {
     'unicorn/no-array-reduce': 'off',
     'unicorn/prefer-node-protocol': 'off',
     'unicorn/no-null': 'off',
-    semi: 'off',
-    '@typescript-eslint/semi': ['error']
+    '@typescript-eslint/semi': ['off']
   },
   overrides: [
     {

@@ -27,10 +27,6 @@ jobs:
     name: ⚙️ commitlint
     runs-on: ubuntu-latest
 
-    if: github.actor != 'dependabot[bot]'
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -38,3 +34,23 @@ jobs:
           fetch-depth: 0
       - name: ⚙️ commitlint
         uses: wagoid/commitlint-github-action@v4
+
+  vitest:
+    name: ⚡ Vitest
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: 📥 Download deps with yarn
+        uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: true
+
+      - name: ⚡ Run vitest
+        run: yarn run test -- --coverage

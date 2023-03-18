@@ -1,9 +1,6 @@
+.next
+.idea
 node_modules
+yarn.lock
 public
-.eslintrc.js
-next.config.js
-prettier.config.js
-commitlint.config.js
-next-env.d.ts
-tailwind.config.js
-postcss.config.js
+coverage

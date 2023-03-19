@@ -1,5 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document'
-import { FunctionComponent } from 'react'
+import { type FunctionComponent } from 'react'
 
 const Document: FunctionComponent = () => {
   return (

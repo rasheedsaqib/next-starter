@@ -70,12 +70,12 @@ module.exports = function (
             },
             {
               type: 'add',
-              path: 'src/components/{{kebabCase name}}/{{kebabCase name}}-feature.tsx',
+              path: 'src/features/{{kebabCase name}}/{{kebabCase name}}-feature.tsx',
               templateFile: 'plop-templates/next-page/feature.tsx.hbs'
             },
             {
               type: 'add',
-              path: 'src/components/{{kebabCase name}}/{{kebabCase name}}-feature.test.tsx',
+              path: 'src/features/{{kebabCase name}}/{{kebabCase name}}-feature.test.tsx',
               templateFile: 'plop-templates/next-page/feature.test.tsx.hbs'
             }
           ]

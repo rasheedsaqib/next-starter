@@ -1,0 +1,9 @@
+.next
+.idea
+node_modules
+yarn.lock
+public
+coverage
+playwright-report
+playwright.config.ts
+next-env.d.ts

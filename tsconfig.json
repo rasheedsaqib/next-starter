@@ -38,7 +38,8 @@
     "next.config.js",
     "postcss.config.js",
     "prettier.config.js",
-    "tailwind.config.ts"
+    "tailwind.config.ts",
+    "vitest.config.js"
   ],
   "exclude": [
     "node_modules"

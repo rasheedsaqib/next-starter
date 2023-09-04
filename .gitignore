@@ -36,3 +36,7 @@ next-env.d.ts
 
 # ides
 .idea
+
+# testing
+playwright-report
+test-results

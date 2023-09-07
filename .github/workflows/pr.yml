@@ -21,7 +21,7 @@ jobs:
           useLockFile: true
 
       - name: 🔬 Lint
-        run: yarn run analyze
+        run: yarn run lint
 
   commitlint:
     name: ⚙️ Commitlint

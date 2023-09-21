@@ -57,7 +57,7 @@
     "eslint-plugin-simple-import-sort": "10.0.0",
     "eslint-plugin-sonarjs": "0.21.0",
     "eslint-plugin-unicorn": "48.0.1",
-    "happy-dom": "12.1.2",
+    "happy-dom": "12.1.5",
     "husky": "8.0.3",
     "postcss": "8.4.30",
     "prettier": "3.0.3",

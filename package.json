@@ -59,7 +59,7 @@
     "eslint-plugin-unicorn": "51.0.1",
     "happy-dom": "12.10.3",
     "husky": "8.0.3",
-    "postcss": "8.4.31",
+    "postcss": "8.4.35",
     "prettier": "3.1.0",
     "prettier-plugin-tailwindcss": "0.5.11",
     "tailwindcss": "3.3.5",
